@@ -18,9 +18,36 @@ namespace Chapter6Exercises
 
             // Chapter 6 Exercise
 
-            // Factorial Finder Program with do-while loop
+            // Product in Range[N...M]
+            Console.Write("Number 1 = ");
+            int numberOne = int.Parse(Console.ReadLine());
+
+            Console.Write("Number 2 = ");
+            int numberTwo = int.Parse(Console.ReadLine());
+
+            int iterator = numberOne;
+            BigInteger product = 1;
+
+            do
+            {
+                product *= iterator;
+                iterator++;
+
+            } while (iterator <= numberTwo);
+            // Unchecked code will silently overflow and the code above will produce
+            // incorrect output instead of showing an error. To overcome this, you may
+            // surround the line holding the multiplication by the checked keyword.
+            // double d = product; // 5 * 10^9
+            // Console.WriteLine(d); // 5000000000
+            // int i = checked((int)d); // System.OverflowException Console.WriteLine(i);
+            // Console.WriteLine(i);
+
+            Console.WriteLine("Production[Number 1 ... Number 2] = " + product);
+            Console.Read();
 
             
+            // Factorial Finder Program with do-while loop
+            /*
             Console.Write("n = ");
             int number = int.Parse(Console.ReadLine());
 
@@ -36,7 +63,7 @@ namespace Chapter6Exercises
                 number--;
             } while (number > 0);
             Console.WriteLine("number! = " + factorial);
-            
+            */
 
             // Factorial Finder Program with while loop
             /*
