@@ -18,6 +18,46 @@ namespace Chapter6Exercises
 
             // Chapter 6 Exercise
 
+            // Calculating N^M
+
+            Console.WriteLine("n = ");
+            int n = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("m = ");
+            int m = int.Parse(Console.ReadLine());
+
+            decimal result = 1;
+            for (int i = 0; i < m; i++)
+            {
+                result *= n;
+            }
+            Console.WriteLine("n^m = " + result);
+            Console.Read();
+            // For loop
+            /*
+            for(int i = 1, sum = 1; i <= 128; i = i * 2, sum += i)
+            {
+                Console.WriteLine("i = {0}, sum = {1} ", i, sum);
+            }
+            Console.Read();
+            */
+
+            // infinite Abbas
+            /*
+            for (bool i = true; i = true;)
+            {
+                Console.WriteLine("Abbas");
+            }
+            */
+
+            // infinite Abbas
+            /*
+            for (; ;)
+            {
+                Console.WriteLine("Abbas");
+            }
+            */
+
             // Product in Range[N...M]
             /*
             Console.Write("Number 1 = ");
