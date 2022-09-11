@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading;
 using System.Globalization;
-// using Nakov.IO;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -15,6 +14,8 @@ namespace Chapter6ExercisesSolutions
             // Chapter 6 Exercise
 
             // Factorial Finder Program with do-while loop
+
+            /*
             Console.Write("n = ");
             int number = int.Parse(Console.ReadLine());
 
@@ -30,6 +31,7 @@ namespace Chapter6ExercisesSolutions
                 number--;
             } while (number > 0);
             Console.WriteLine("number! = " + factorial);
+            */
 
             // Factorial Finder Program with while loop
             /*
