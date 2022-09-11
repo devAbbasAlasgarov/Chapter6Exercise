@@ -19,6 +19,7 @@ namespace Chapter6Exercises
             // Chapter 6 Exercise
 
             // Product in Range[N...M]
+            /*
             Console.Write("Number 1 = ");
             int numberOne = int.Parse(Console.ReadLine());
 
@@ -44,7 +45,7 @@ namespace Chapter6Exercises
 
             Console.WriteLine("Production[Number 1 ... Number 2] = " + product);
             Console.Read();
-
+            */
             
             // Factorial Finder Program with do-while loop
             /*
