@@ -5,6 +5,7 @@ using System.Threading;
 using System.Globalization;
 using System.Linq;
 using System.Collections.Generic;
+using System.Numerics;
 
 namespace Chapter6Exercises
 {
@@ -19,11 +20,11 @@ namespace Chapter6Exercises
 
             // Factorial Finder Program with do-while loop
 
-            /*
+            
             Console.Write("n = ");
             int number = int.Parse(Console.ReadLine());
 
-            decimal factorial = 1;
+            BigInteger factorial = 1;
 
             do
             {
@@ -35,7 +36,7 @@ namespace Chapter6Exercises
                 number--;
             } while (number > 0);
             Console.WriteLine("number! = " + factorial);
-            */
+            
 
             // Factorial Finder Program with while loop
             /*
