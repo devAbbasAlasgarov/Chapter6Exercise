@@ -18,8 +18,122 @@ namespace Chapter6Exercises
 
             // Chapter 6 Exercise
 
-            // Calculating N^M
+            // Luck numbers ABCD A+B = C+D
 
+            for(int a = 0; a <= 9; a++)
+            {
+                for(int b = 1; b <= 9; b++)
+                {
+                    for(int c = 1; c <= 9; c++)
+                    {
+                        for(int d = 1; d <= 9; d++)
+                        {
+                            if((a+b) == (c+d))
+                            {
+                                Console.WriteLine(a + " " + b + " " + c + " " + d);
+                            }
+                        }
+                    }
+                }
+            }
+            Console.Read();
+
+            // Prime Numbers in an Interval
+            /*
+            Console.Write("n = ");
+            int n = int.Parse(Console.ReadLine());
+
+            Console.Write("m = ");
+            int m = int.Parse(Console.ReadLine());
+
+            for(int num = n; num <= m; num++)
+            {
+                bool prime = true;
+                int divider = 2;
+                int maxDivider = (int)Math.Sqrt(num);
+                while(divider <= maxDivider)
+                {
+                    if(num % divider ==0)
+                    {
+                        prime = false;
+                        break;
+                    }
+                    divider++;
+                }
+                if (prime)
+                {
+                    Console.WriteLine(" " + num);
+                }
+            }
+            Console.Read();
+            */
+
+            // Nested Loops
+            // Printing a triangle with numbers
+            /*
+            int n = int.Parse(Console.ReadLine());
+
+            for(int row = 1; row <= n; row++)
+            {
+                for(int col = 1; col <= row; col++)
+                {
+                    Console.Write(col + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.Read();
+            */
+
+            // foreach loop
+            /*
+            int[] numbers = { 2, 3, 5, 7, 11, 13, 17, 19 };
+            foreach(int i in numbers)
+            {
+                Console.WriteLine(" " + i);
+            }
+            Console.WriteLine();
+
+            string[] towns = { "London", "Paris", "Milan", "New York" };
+            foreach(string town in towns)
+            {
+                Console.WriteLine(" " + town);
+            }
+
+            Console.Read();
+            */
+
+            // Operator "continue"
+            // input 10 output 18 when it is continue
+            // input 10 output 9 when it is break
+            /*
+            int n = int.Parse(Console.ReadLine());
+
+            int sum = 0;
+
+            for(int i = 1; i <= n; i += 2)
+            {
+                if (i % 7 == 0)
+                {
+                    continue;
+                    // break;
+                }
+                sum += i;
+            }
+            Console.WriteLine("sum = " + sum); 
+            Console.Read();
+            */
+
+            // For loop with several variables
+            /*
+            for(int small = 1, large = 10; small < large; small++, large--)
+            {
+                Console.WriteLine(small + " " + large);
+            }
+            Console.Read();
+            */
+
+            // Calculating N^M
+            /*
             Console.WriteLine("n = ");
             int n = int.Parse(Console.ReadLine());
 
@@ -33,7 +147,9 @@ namespace Chapter6Exercises
             }
             Console.WriteLine("n^m = " + result);
             Console.Read();
-            // For loop
+            */
+
+            // For loop with several variables
             /*
             for(int i = 1, sum = 1; i <= 128; i = i * 2, sum += i)
             {
@@ -86,7 +202,7 @@ namespace Chapter6Exercises
             Console.WriteLine("Production[Number 1 ... Number 2] = " + product);
             Console.Read();
             */
-            
+
             // Factorial Finder Program with do-while loop
             /*
             Console.Write("n = ");
@@ -126,6 +242,8 @@ namespace Chapter6Exercises
                 Console.WriteLine("number! = " + factorial);
             */
 
+
+            // Prime Number
             /*
             int number = int.Parse(Console.ReadLine());
             int divider = 2;
