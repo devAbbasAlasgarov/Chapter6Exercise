@@ -19,7 +19,7 @@ namespace Chapter6Exercises
             // Chapter 6 Exercise
 
             // Lottery 6/49
-
+            /*
             for(int i1 = 1; i1 <= 44; i1++)
             {
                 for(int i2 = i1 + 1; i2 <= 45; i2++)
@@ -41,6 +41,7 @@ namespace Chapter6Exercises
                 }
             }
             Console.Read();
+            */
 
             // Luck numbers ABCD A+B = C+D
             /*
